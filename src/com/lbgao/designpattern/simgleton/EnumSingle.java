@@ -16,6 +16,8 @@ public enum EnumSingle {
 class Test{
 
     public static void main(String[] args) throws Exception {
+
+
         EnumSingle instance1 = EnumSingle.INSTANCE;
         EnumSingle instance2 = EnumSingle.INSTANCE;
 
