@@ -35,15 +35,9 @@ OOP七大原则
 
 饿汉式
 
-![image-20220222090721848](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220222090721848.png)
+![image-20220222090721848-16457898237783](D:\21.04.14\designpattern\readme.assets\image-20220222090721848-16457898237783.png)
 
-
-
-
-
-懒汉式
-
-![image-20220222090559369](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220222090559369.png)
+![image-20220222090559369](D:\21.04.14\designpattern\readme.assets\image-20220222090559369.png)
 
 ### factory 工厂模式
 
@@ -51,11 +45,11 @@ OOP七大原则
 
 详细分类
 - 简单工厂模式：用来生产同一等级结构的任意产品，新增产品，需要覆盖已有代码。
-  ![image-20220222092810706](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220222092810706.png)
+  ![image-20220222092810706](D:\21.04.14\designpattern\readme.assets\image-20220222092810706.png)
 
 - 工厂方法模式：用来生产同一等级结构中的固定产品，支持增加任意产品。
 
-  ![image-20220222092903333](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220222092903333.png)
+  ![image-20220222092903333](D:\21.04.14\designpattern\readme.assets\image-20220222092903333.png)
 
 - 抽象工厂模式：围绕一个超级工厂创建其他工厂，该超级工厂又称为其他工厂的工厂。
 抽象工厂模式提供了一个创建一系列相关或者相互依赖对象的接口，无需指定它们具体的类。
@@ -65,7 +59,7 @@ OOP七大原则
 	- 强调一系列相关的产品对象一起使用创建对象需要大量重复代码。
 	- 提供一个产品类的库，所有产品以同样的接口出现，从而使得客户端不依赖具体的实现。
 
-![image-20220222115120800](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220222115120800.png)
+![image-20220222115120800](D:\21.04.14\designpattern\readme.assets\image-20220222115120800.png)
 
 - 优点：
 	- 具体产品在应用层的代码隔离，无需关心创建的细节。
@@ -75,7 +69,7 @@ OOP七大原则
 	- 规定了所有可能被创建的产品集合，拓展新的产品困难。
 	- 增加了系统的抽象性和理解难度。
 
-![image-20220222121331952](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220222121331952.png)
+![image-20220222121331952-16457897454342](D:\21.04.14\designpattern\readme.assets\image-20220222121331952-16457897454342.png)
 
 核心本质:
 
@@ -93,7 +87,7 @@ OOP七大原则
 
 用户只需要给出指定复杂对象的类型和内容，建造者模式负责按顺序创建负责对象。
 
-![image-20220223222139680](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220223222139680.png)
+![image-20220223222139680](D:\21.04.14\designpattern\readme.assets\image-20220223222139680.png)
 
 ### prototype 原型模式
 
@@ -170,13 +164,13 @@ public class Product implements Cloneable {
 	- 系统需要使用一些现有的类，而这些类的接口不符合系统的需要，甚至没有类的源代码。
 	- 想创建一个可以重复使用的类，用于与一些彼此之间没有太大关联的一些类，包括一些可能在将来引进的类一起工作。
 
-![image-20220224165028636](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220224165028636.png)
+![image-20220224165028636](D:\21.04.14\designpattern\readme.assets\image-20220224165028636.png)
 
 ### bridge 桥接模式
 
 - 桥接模式是将抽象部分和它的实现部分分离，使它们都可以独立地变化。它是一种对象结构型模式。
 
-![image-20220224174719262](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220224174719262.png)
+![image-20220224174719262](D:\21.04.14\designpattern\readme.assets\image-20220224174719262.png)
 
 
 
@@ -184,9 +178,9 @@ public class Product implements Cloneable {
 
 分析这个场景中有两变化的维度：品牌，类型。
 
-![image-20220224174828094](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220224174828094.png)
+![image-20220224174828094](D:\21.04.14\designpattern\readme.assets\image-20220224174828094.png)
 
-![image-20220224191410572](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220224191410572.png)
+![image-20220224191410572](D:\21.04.14\designpattern\readme.assets\image-20220224191410572.png)
 
 好处分析：
 - 桥接模式类似于多继承方案，但是多继承方案又违背了类的单一职责原则，复用性比较差，类的个数比较多，桥接模式是比多继承方案更好的解决方案。极大的减少了子类的个数。
@@ -205,7 +199,7 @@ public class Product implements Cloneable {
 
 场景：
 - java语言通过java虚拟机实现了平台无关性。
- ![image-20220224193710307](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220224193710307.png)
+ ![image-20220224193710307](D:\21.04.14\designpattern\readme.assets\image-20220224193710307.png)
 - jdbc驱动程序也是桥接模式的应用之一。
 
 ### proxy 代理模式
@@ -216,9 +210,7 @@ public class Product implements Cloneable {
 - 静态代理
 - 动态代理
 
-![image-20220224194852540](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220224194852540.png)
-
-角色分析：
+![image-20220224194852540](D:\21.04.14\designpattern\readme.assets\image-20220224194852540.png)角色分析：
 - 抽象角色：一般会使用接口或者抽象类来解决
 - 真实角色：被代理的角色
 - 代理角色：代理真实角色，代理真实角色后，我们一般会做一些附属操作
@@ -331,4 +323,24 @@ public class Proxy implements Rent{
 
 加深理解：
 
-![image-20220224214835054](C:\Users\lbgao\AppData\Roaming\Typora\typora-user-images\image-20220224214835054.png)
+![image-20220224214835054](D:\21.04.14\designpattern\readme.assets\image-20220224214835054.png)
+
+### 动态代理
+
+- 动态代理和静态代理角色一样
+- 动态代理的代理类是动态生成的，不是我们直接写好的。
+- 动态代理分为两大类：1. 基于接口的动态代理，2. 基于类的动态代理
+  - 基于接口---JDK动态代理 【我们在这里使用】
+  - 基于类：cglib
+  - java字节码实现：javassist
+
+需要了解两个类：：Proxy : 代理，InvocationHandler（接口）：调用处理程序
+
+​	
+
+动态代理的好处：
+
+- 可以使真实角色的操作更加纯粹，不用去关注一些公共的业务
+- 公共也就交给了代理角色，实现了业务的分工
+- 公共业务发生扩展的时候，方便集中管理
+- 一个动态代理类代理的是一个接口，一般就是对应的一类业务
