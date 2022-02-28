@@ -35,9 +35,9 @@ OOP七大原则
 
 饿汉式
 
-![image-20220222090721848-16457898237783](D:\21.04.14\designpattern\readme.assets\image-20220222090721848-16457898237783.png)
+![image-20220222090721848-16457898237783](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220222090721848-16457898237783.png)
 
-![image-20220222090559369](D:\21.04.14\designpattern\readme.assets\image-20220222090559369.png)
+![image-20220222090559369](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220222090559369.png)
 
 ### factory 工厂模式
 
@@ -45,11 +45,11 @@ OOP七大原则
 
 详细分类
 - 简单工厂模式：用来生产同一等级结构的任意产品，新增产品，需要覆盖已有代码。
-  ![image-20220222092810706](D:\21.04.14\designpattern\readme.assets\image-20220222092810706.png)
+  ![image-20220222092810706](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220222092810706.png)
 
 - 工厂方法模式：用来生产同一等级结构中的固定产品，支持增加任意产品。
 
-  ![image-20220222092903333](D:\21.04.14\designpattern\readme.assets\image-20220222092903333.png)
+  ![image-20220222092903333](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220222092903333.png)
 
 - 抽象工厂模式：围绕一个超级工厂创建其他工厂，该超级工厂又称为其他工厂的工厂。
 抽象工厂模式提供了一个创建一系列相关或者相互依赖对象的接口，无需指定它们具体的类。
@@ -59,7 +59,7 @@ OOP七大原则
 	- 强调一系列相关的产品对象一起使用创建对象需要大量重复代码。
 	- 提供一个产品类的库，所有产品以同样的接口出现，从而使得客户端不依赖具体的实现。
 
-![image-20220222115120800](D:\21.04.14\designpattern\readme.assets\image-20220222115120800.png)
+![image-20220222115120800](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220222115120800.png)
 
 - 优点：
 	- 具体产品在应用层的代码隔离，无需关心创建的细节。
@@ -69,7 +69,7 @@ OOP七大原则
 	- 规定了所有可能被创建的产品集合，拓展新的产品困难。
 	- 增加了系统的抽象性和理解难度。
 
-![image-20220222121331952-16457897454342](D:\21.04.14\designpattern\readme.assets\image-20220222121331952-16457897454342.png)
+![image-20220222121331952-16457897454342](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220222121331952-16457897454342.png)
 
 核心本质:
 
@@ -87,7 +87,7 @@ OOP七大原则
 
 用户只需要给出指定复杂对象的类型和内容，建造者模式负责按顺序创建负责对象。
 
-![image-20220223222139680](D:\21.04.14\designpattern\readme.assets\image-20220223222139680.png)
+![image-20220223222139680](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220223222139680.png)
 
 ### prototype 原型模式
 
@@ -164,13 +164,13 @@ public class Product implements Cloneable {
 	- 系统需要使用一些现有的类，而这些类的接口不符合系统的需要，甚至没有类的源代码。
 	- 想创建一个可以重复使用的类，用于与一些彼此之间没有太大关联的一些类，包括一些可能在将来引进的类一起工作。
 
-![image-20220224165028636](D:\21.04.14\designpattern\readme.assets\image-20220224165028636.png)
+![image-20220224165028636](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220224165028636.png)
 
 ### bridge 桥接模式
 
 - 桥接模式是将抽象部分和它的实现部分分离，使它们都可以独立地变化。它是一种对象结构型模式。
 
-![image-20220224174719262](D:\21.04.14\designpattern\readme.assets\image-20220224174719262.png)
+![image-20220224174719262](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220224174719262.png)
 
 
 
@@ -178,9 +178,9 @@ public class Product implements Cloneable {
 
 分析这个场景中有两变化的维度：品牌，类型。
 
-![image-20220224174828094](D:\21.04.14\designpattern\readme.assets\image-20220224174828094.png)
+![image-20220224174828094](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220224174828094.png)
 
-![image-20220224191410572](D:\21.04.14\designpattern\readme.assets\image-20220224191410572.png)
+![image-20220224191410572](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220224191410572.png)
 
 好处分析：
 - 桥接模式类似于多继承方案，但是多继承方案又违背了类的单一职责原则，复用性比较差，类的个数比较多，桥接模式是比多继承方案更好的解决方案。极大的减少了子类的个数。
@@ -199,7 +199,7 @@ public class Product implements Cloneable {
 
 场景：
 - java语言通过java虚拟机实现了平台无关性。
- ![image-20220224193710307](D:\21.04.14\designpattern\readme.assets\image-20220224193710307.png)
+ ![image-20220224193710307](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220224193710307.png)
 - jdbc驱动程序也是桥接模式的应用之一。
 
 ### proxy 代理模式
@@ -210,7 +210,7 @@ public class Product implements Cloneable {
 - 静态代理
 - 动态代理
 
-![image-20220224194852540](D:\21.04.14\designpattern\readme.assets\image-20220224194852540.png)角色分析：
+![image-20220224194852540](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220224194852540.png)角色分析：
 - 抽象角色：一般会使用接口或者抽象类来解决
 - 真实角色：被代理的角色
 - 代理角色：代理真实角色，代理真实角色后，我们一般会做一些附属操作
@@ -323,7 +323,7 @@ public class Proxy implements Rent{
 
 加深理解：
 
-![image-20220224214835054](D:\21.04.14\designpattern\readme.assets\image-20220224214835054.png)
+![image-20220224214835054](https://cdn.jsdelivr.net/gh/Bin-gao/designpattern/readme.assets/image-20220224214835054.png)
 
 ### 动态代理
 
